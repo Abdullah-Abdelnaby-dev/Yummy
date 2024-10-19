@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="imges/png-transparent-fork-and-knife-icon-computer-icons-meal-lunch-meal-miscellaneous-logo-silhouette (1).png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-black ">
+
+  <div class="loading-screen  position-fixed start-0 top-0 end-0 bottom-0   justify-content-center align-items-center " >
+<i class="fa fa-spinner fa-spin text-white fs-1 "></i>
+  </div>
+  
+  <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0  ">
+    <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4 bg-black ">
+      <div class="links overflow-hidden ">
+        <ul class="color-white">
+          <li  onclick="showSearchIn() ; closeSideNav()" class="py-2 position-relative"><a href="javascript:void(0)">Search</a></li>
+          <li onclick="getCategories() ; closeSideNav()" class="py-2 position-relative"><a href="javascript:void(0)">Categories</a></li>
+          <li onclick="getArea() ; closeSideNav()" class="py-2 position-relative"><a href="javascript:void(0)">Area</a></li>
+          <li onclick="getIngredients() ; closeSideNav()" class="py-2 position-relative"><a href="javascript:void(0)">Ingredients</a></li>
+          <li onclick="showContact() ; closeSideNav()" class="py-2 position-relative"><a href="javascript:void(0)">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-header d-flex flex-column justify-content-between py-4 px-2  text-black bg-white ">
+      <div class="img  ">
+        <img class="img-fluid" src="./imges/png-transparent-fork-and-knife-icon-computer-icons-meal-lunch-meal-miscellaneous-logo-silhouette (1).png" alt="">
+      </div>
+      <div class=" ">
+        <i class="fa-solid fa-align-justify close-open"></i>
+
+      </div>
+      <div class="icon ">
+        <i class="fa-solid fa-globe d-block "></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="min-vh-100 position-relative">
+
+    <div class="container w-50" id="searchContainer">
+  
+    </div>
+  <div class="container">
+  
+  
+    <div class="row my-4 g-3" id="rowData">
+      <!-- <div class="contact min-vh-100 d-flex justify-content-center mt-5 z-3">
+        <div class="container w-50">
+          <div class="row g-3">
+            <div class="col-md-6">
+            <input  id="nameInput"  onkeyup="inputValidation()" type="text" class="form-control"  placeholder="Enter you name">
+            <div id="nameAlert"  class="alert alert-danger w-100 p-1 d-none">
+            Special characters and numbers not allowed
+            </div>
+            </div>
+            <div class="col-md-6">
+            <input id="emailInput"  onkeyup="inputValidation()" type="email" class="form-control"  placeholder="Enter you email">
+                  <div  id="emailAlert" class="alert alert-danger w-100 p-1 d-none">
+            You Email is not allowed
+            </div>
+            </div>
+            <div class="col-md-6">
+            <input id="phoneInput"  onkeyup="inputValidation()" type="number" class="form-control"  placeholder="Enter you phone">
+                  <div id="phoneAlert"  class="alert alert-danger w-100 p-1 d-none">
+            You phone is not allowed
+            </div>
+            </div>
+            <div class="col-md-6">
+            <input id="ageInput"  onkeyup="inputValidation()" type="number" class="form-control"  placeholder="Enter you age">
+                  <div id="ageAlert"  class="alert alert-danger w-100 p-1 d-none">
+            Your Age is not allowed
+            </div>
+            </div>
+            <div class="col-md-6">
+            <input id="passwordInput"  onkeyup="inputValidation()" type="password" class="form-control"  placeholder="Enter you password">
+                  <div id="passwordAlert"  class="alert alert-danger w-100 p-1 none">
+            Password not allowed
+            </div>
+            </div>
+            <div class="col-md-6">
+            <input id="repasswordInput" onkeyup="inputValidation()" type="password" class="form-control"  placeholder="Enter you re-password">
+                        <div  id="passwordAlert" class="alert alert-danger w-100 p-1 d-none">
+            Password not allowed
+            </div>
+            </div>
+      
+          </div>
+          <button id="submitBtn" type="submit" class="btn btn-primary mt-3 ">Submit</button>
+        </div>
+      </div>   -->
+  </div> 
+   
+  </div>
+  </div>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
